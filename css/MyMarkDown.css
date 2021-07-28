@@ -1,0 +1,379 @@
+@media print{
+    @page {
+        
+    }
+    .bottom,#menu{
+        display: none;
+    }
+    
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.background{
+    
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-image: url("./src/icon/girl.jpg"); */
+    background-size: cover;
+    top: 0;
+    opacity: 50%;
+    z-index: -1;
+    
+}
+.musicbar{
+    position: absolute;
+    top:10px;
+    right: 0;
+    height:200px;
+    width: 80px;
+    z-index: 1000;
+  
+}
+.musicplayer{
+    position: absolute;
+    top:0;
+    right:100px;
+    width: 330px;
+    height: 86px;
+
+}
+
+
+.maincontainer{
+    position: relative;
+    height: 1000px;
+    width: 1050px;
+    margin: 60px auto;
+    
+    padding: 10px;
+
+}
+
+
+.menu{
+    /* background-color: blue; */
+    width: 100%;
+    border:0.5px solid rgb(3, 54, 105);
+    padding: 10px;
+    display: flex;
+    border-bottom: none;
+   
+}
+
+.text{
+    /* height:800px; */
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.5);
+    opacity: 100%;
+    margin: 0    auto;
+    vertical-align:100px;
+    padding: 10px;
+    border:0.5px solid rgb(3, 54, 105);
+   
+}
+.bottom{
+  padding: 10px;
+  height: 100px;
+  
+}
+.bottom button{
+    width: 40px;
+    height:  35px;
+    background-color:transparent;
+    vertical-align:middle;
+    
+}
+.bottom button img{
+    vertical-align: middle;
+}
+#changeOpacity,#changeBackgroundImg{
+    height: 40px;
+    line-height: 40px;
+    float:right;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+#tipsname{
+    border-radius: 5px;
+    padding: 3px;
+    top: -30px;
+    background-color: rgb(95, 95, 95);
+}
+#mytext{
+    padding: 10px;
+    overflow: auto;
+    /* height: 780px; */
+
+}
+
+.menu button:hover{
+    opacity: 30%;
+}
+button{
+    left: 10px;
+    margin: 0 0 0 0 ;
+    width: 35px;
+    height:  30px;
+    background-color:transparent;
+    
+    
+}
+
+button img{
+    width: 100%;
+    height: 100%;
+}    
+
+#picturefile,#videofile,#backgroundfile{
+    
+    width: 0px;
+    height:  0px;
+    
+}
+#fontstyle,#fontsize{
+    margin: auto ;
+    bottom:7px;
+    height: 23px;
+    position:relative;   
+    background-color: transparent;
+
+}
+img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #333;
+}
+.code{
+    background-color: gainsboro;
+    border:1px solid;
+    border-radius:5px;
+    width: 100%;
+    display: block;
+   
+}
+
+#triangle{
+    width: 0;
+    height: 0;
+    border-width: 10px;   
+    border-style: solid;
+    margin: 0 auto;
+    border-color:grey transparent transparent transparent;
+}
+#save,#back,#delete{
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+
+
+.pannel{
+    width: 50%;
+    background-color: red;
+}
+.picmenu{
+    width: 280px;
+    height: 35px;
+    background-color:gray;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 20px;
+    z-index: 1020;
+    position:absolute;
+    /* visibility: visible */
+}
+.sizebtn{
+    height: 100%;
+    line-height: 35px;
+}
+.deletebtn,.smallbtn,.largebtn{
+   margin-top: 5px;
+}
+#home{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    
+}
+
+#home img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.comment{
+    width: 1050px;
+    opacity: 100%;
+    margin: 0    auto;
+    margin-top: 100px;
+   
+}
+.commentcell{
+    vertical-align:100px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.7);
+    border:0.5px solid rgb(3, 54, 105);
+    margin-bottom: 40px;
+}
+.commentheader{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.commentimg{
+    height: 100%;
+    border-radius: 50%;
+}
+.commentimg img{
+    height: 100%;
+    border-radius: 50%;
+}
+.commentname{
+    margin-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    line-height: 50px;
+}
+.commenttime{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+    height: 100%;
+    line-height: 50px;
+}
+.commentcontent{
+    font-size: 18px;
+    width: 100%;
+    padding: 20px;
+}
+
+.makecomment{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 1050px;
+    background-color: rgb(255, 255, 255,0.7);
+    opacity: 100%;
+   
+    vertical-align:100px;
+    padding: 10px;
+    border:0.5px solid rgb(3, 54, 105);
+}
+
+#reviewer{
+    display: flex;
+    padding: 30px;
+}
+#reviewerhead{
+    margin-right: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url('../src/icon/默认头像.png');
+    background-size: cover;
+}
+.reviewerinformation{
+    margin-top: 10px;
+    margin-right: 40px;
+    width: 250px;
+    height: 40px;
+    opacity: 0.7;
+    background: rgb(255, 255, 255,0.7);
+    border: 0.5px solid gray;
+    display: flex;
+    border-radius: 5px;
+
+}
+.reviewerinformation:hover{
+    border: 0.5px solid blue;
+}
+.reviewerinformation img{
+    position: relative;
+    opacity: 0.7;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+}
+
+.reviewerinput{
+    outline: none;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+    height: 37px;
+    background: rgb(255, 255, 255,0.7);
+    border: transparent;
+}
+
+
+.reviewercomment{
+    margin-right: 50px;
+    width: 90%;
+    height: 400px;
+    opacity: 0.7;
+    background: rgb(255, 255, 255,0.7);
+    border: 0.5px solid gray;
+    display: flex;
+    border-radius: 5px;
+    margin: 0 30px 20px 30px;
+    padding: 20px;
+}
+.reviewercomment:hover{
+    border: 0.5px solid blue;
+    outline: none;
+
+}
+.reviewercomment:focus{
+   
+    outline: none;
+
+}
+.resetorcommit{
+    width: 965px;
+    padding: 20px;
+    margin: 0 30px 10px 30px;
+    display: flex;
+    justify-content:flex-end;
+}
+.reset{
+   
+    width: 100px;
+    height: 60px;
+    margin-right: 40px;
+    border: 1px solid #00a1d6;
+    border-radius: 10px;
+    background-color: #00a1d6;
+    color: white;
+    outline: none;
+
+}
+.commitcomment{
+   
+    width: 100px;
+    height: 60px;
+    border: 1px solid #00a1d6;
+    border-radius: 10px;
+    background-color: #00a1d6;
+    color: white;
+    outline: none;
+    
+}
+.reset:hover, .commitcomment:hover{
+    box-shadow: 0 0 10px #333;
+    cursor: pointer;
+} 

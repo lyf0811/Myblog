@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <link rel="stylesheet" href="./css/personal.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background {
+        background-image: url('../src/icon/background.jpg');
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        top: 0;
+        opacity: 0.5;
+        z-index: -1003;
+        /* display: none; */
+    }
+
+    #home {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+    }
+
+    img:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px #333;
+    }
+
+    #maincontainer {
+        display: flex;
+        position: relative;
+        top: 4vh;
+        margin: 0 auto;
+        width: 70vw;
+        height: 80vh;
+        z-index: 1000;
+        padding: 6vh;
+        opacity: 0.9;
+        border-radius: 30px;
+        justify-content: space-around;
+    }
+
+    #leftlist {
+        width: 25%;
+        height: 100%;
+        background-color: white;
+        box-shadow: darkgrey 10px 10px 30px 5px;
+     
+    }
+
+    #rightlist {
+        width: 70%;
+        height: 100%;
+        background-color: white;
+        box-shadow: darkgrey 10px 10px 30px 5px;
+    }
+   
+</style>
+
+<body>
+    <div id="background"></div>
+    <input type="file" name="" id="headfile" style="display: none;">
+    <a href="./mainpage.html">
+        <div id="home">
+            <img class='menuicon' src="./src/icon/home.png" alt="" style="width: 100%;">
+        </div>
+    </a>
+    <div id="maincontainer">
+        <div id="leftlist">
+            <div id="header">
+
+            </div>
+            <div id="upload">
+                <button id='editheadimg' onclick="document.getElementById('headfile').click()" style="display: none;">修改头像</button>
+            </div>
+        </div>
+        <div id="rightlist">
+            <p id="title">个人信息</p>
+            <div id="account" class='col'>
+                用户名：<input type="text" name="" id="useraccount" readonly>
+            </div>
+            <div id="name" class='col'>
+                昵称：<input type="text" name="" id="username" readonly>
+            </div>
+            <div id="email" class='col'>
+                邮箱：<input type="text" name="" id="useremail" readonly>
+            </div>
+            <div id="sign" class='col'>
+                签名：<textarea name="" id="usersign" cols="40" rows="20" readonly></textarea>
+            </div>
+            <div id="menulist">
+                <button id="edit">编辑</button>
+                <button id="save" style="display: none;">保存</button>
+                <button id="cancel" style="display: none;">取消</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/personal.js"></script>
+
+</html>

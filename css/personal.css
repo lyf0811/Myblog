@@ -1,0 +1,77 @@
+#header{
+    width: 40%;
+    height: 17.8%;
+    /* background-color: rebeccapurple; */
+    margin:8.5vh 5.25vw 3.5vh 5.25vw;
+    border-radius: 50%;
+    background-image: url('../src/icon/默认头像.png');
+    background-size: cover;
+}
+#title{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+#rightlist .col{
+    font-size: 20px;
+    display: flex;
+    justify-content:flex-end;
+    height: 5%;
+    line-height: 40px;
+    margin: 6vh 40px 6vh 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+#rightlist input{
+    height: 35px;
+    width: 80%;
+    font-size: 16px;
+    border: 0.5px solid gray ;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+#rightlist textarea{
+    padding: 10px 0 0 10px;
+    height: 185px;
+    width: 80%;
+    font-size: 16px;
+    border: 0.5px solid gray ;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+}
+#rightlist textarea:focus{
+    border: 0.5px solid blue ;
+    outline: none;
+}
+#rightlist input:focus{
+    border: 0.5px solid blue ;
+    outline: none;
+}
+
+#menulist{
+    position:relative;
+    top: 19vh;
+    right:30px;
+    display: flex;
+    justify-content: flex-end;
+}
+#menulist button{
+    width: 80px;
+    height: 35px;
+    margin: 0 10px 0 10px;
+    background: rgb(113, 172, 167);
+    border-radius: 5px;
+}
+button:hover{
+    box-shadow: 0 0 5px rgb(146, 146, 146);
+    cursor: pointer;
+}
+#upload button{
+    display: block;
+    margin:  5vw auto;
+    background: rgb(113, 172, 167);
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+
+}

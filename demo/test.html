@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pannel{
+            width: 50%;
+            background-color: red;
+        }
+        .picmenu{
+            width: 200px;
+            height: 30px;
+            background-color:gray;
+            opacity: 0.7;
+            display: flex;
+            justify-content: space-around;
+            float: left;
+            position: relative;
+            margin-top: -30px;
+            top: 30px;
+            visibility: hidden;
+            cursor: pointer;
+            line-height: 30px;
+            border-radius: 20px;
+            /* visibility: visible */
+        }
+    </style>
+</head>
+<body>
+
+    <input type="file" name="picturefile" id="picturefile" accept="image/jpeg, image/jpg, image/jpg, image/png"  onchange="f()" >
+  
+    <img class='newimg' src="./src/icon/cat.png" alt="" style="width: 200px;">
+    <img class='newimg' src="./src/icon/cat.png" alt="" style="width: 200px;">
+
+
+    <button onclick="g()"></button>
+<div style="width: 800px; height: 1000px;">
+    <div class="pannel">
+        <div class="picmenu">
+            <div class="sizebtn" id="25%">
+                25%
+            </div>
+            <div class="sizebtn" id="50%">
+                50%
+            </div>
+            <div class="sizebtn" id="75%">
+                75%
+            </div>
+            <div class="sizebtn" id="100%">
+                100%
+            </div>
+        </div>
+        <img src="./src/icon/cat.png" alt="" style="width:100%"> 
+    </div>
+
+</div>
+ 
+</body>
+<script src="./test.js"></script>
+</html>
