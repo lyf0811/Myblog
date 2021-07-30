@@ -1,8 +1,8 @@
 #header{
-    width: 40%;
-    height: 17.8%;
+    width: 100px;
+    height: 100px;
     /* background-color: rebeccapurple; */
-    margin:8.5vh 5.25vw 3.5vh 5.25vw;
+    margin:8.5vh  auto;
     border-radius: 50%;
     background-image: url('../src/icon/默认头像.png');
     background-size: cover;
