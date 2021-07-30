@@ -10,6 +10,7 @@
  个人信息界面，在这里可以修改个人的头像，昵称，个性签名等
  ![image](https://github.com/lyf0811/Myblog/blob/master/demo/demo5.png)
  博文编辑界面（也是博主视角，只有博主可以编辑文章，游客视角以及其他登陆者只能观看博文和发表评论）
+ 该编辑界面的富文本编辑器是我之前自己编写的
  ![image](https://github.com/lyf0811/Myblog/blob/master/demo/demo6.png)
  已登录的用户会自动载入相关信息，游客发表评论需要填写对应内容
  博客还有许多细节与内容尚未展示
