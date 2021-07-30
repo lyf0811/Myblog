@@ -367,11 +367,7 @@ body:hover{
   background-image: url('../src/icon/left.png');
   background-size: contain;
 }
-.firstpage:hover{
-  transform: scale(1.5,1.5);
-  transition: 1s;
-  background-color: rgb(99, 99, 185);
-}
+
 
 .lastpage{
   width: 25px;

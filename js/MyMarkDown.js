@@ -429,6 +429,7 @@ $(document).ready(function () {
 
         })
         $('.commitcomment').click(function () {
+            if($('#reviewername').val()!=''&& $('.reviewercomment').text()>0){
             let insertdata = {}
             insertdata.id = $('#reviewerid').val()
             insertdata.name = $('#reviewername').val()
@@ -451,6 +452,7 @@ $(document).ready(function () {
             $.post(backgroundurl + 'makecomment', data, function (res) {
                 console.log(res)
             })
+        }
 
         })
 
@@ -660,5 +662,3 @@ $(document).ready(function () {    //token判定登录状态
         })
     }
 })
-
-

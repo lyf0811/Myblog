@@ -43,6 +43,7 @@ function pagelistcreate(pagenum){      //生成底部选择页码栏
   for(let i=1;i<pagenum+1;i++){
     page=document.createElement('div')
     page.className='page'
+    page.id='page'+i
     page.textContent=i
     pagelist=document.querySelector('.pagelist')
     lastpage=document.querySelector('.lastpage')
@@ -83,13 +84,13 @@ function pagelistbuttoninit(){        //底部页码栏的特效
   $('.firstpage,.lastpage,.page').mouseover(function(){
     this.style.transform='scale(1.5,1.5)'
     this.style.transition='1s'
-    this.style.backgroundColor='rgb(99, 99, 185)'
+    // this.style.backgroundColor='rgb(99, 99, 185)'
    
   })
   $('.firstpage,.lastpage,.page').mouseleave(function(){
     this.style.transform='scale(1,1)'
     this.style.transition='1s'
-    this.style.backgroundColor='rgb(201, 201, 201)'
+    // this.style.backgroundColor='rgb(201, 201, 201)'
 
   })
 
@@ -103,6 +104,7 @@ function Pageinit() {           //页面初始化
     pagelistbuttoninit()
     for(let i=0;i<pagenum;i++){
       document.querySelectorAll('.page')[i].addEventListener('click',function(){
+        nowpagenum=i
         $('.content').html('')
         if(i==pagenum-1){
           for(let x=i*perpagenum;x<result.length;x++){
@@ -227,6 +229,9 @@ function Pageinit() {           //页面初始化
 
 
   })
+  var nowpage=nowpagenum+1
+  nowpage='#page'+nowpage
+  $(nowpage).css('background-color','rgb(99, 99, 185)')
 }
 Pageinit();
 
@@ -566,7 +571,6 @@ function set_time(str){
 
 $(document).ready(function () {    //token判定登录状态
   if (localStorage.token != undefined) {
-      console.log(localStorage.token)
       let token = { "token": localStorage.token }
       $.get(url + 'user', token, function (result) {
           if (result.isadmin == '1') {
@@ -592,4 +596,10 @@ $(document).ready(function () {    //token判定登录状态
     location.reload()
     
   })
+})
+$('.pagelist').click(function(){
+  $('.page').css('background-color','rgb(201, 201, 201)')
+  var nowpage=nowpagenum+1
+  nowpage='#page'+nowpage
+  $(nowpage).css('background-color','rgb(99, 99, 185)')
 })
